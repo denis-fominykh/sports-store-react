@@ -19,7 +19,7 @@ const mapDispatchToProps = {
 };
 
 const filterProducts = (products = [], category) =>
-  (!category || category === 'All')
+  !category || category === 'All'
     ? products
     : products.filter(p => p.category.toLowerCase() === category.toLowerCase());
 
